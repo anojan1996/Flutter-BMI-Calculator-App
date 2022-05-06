@@ -1,5 +1,7 @@
+import 'package:bmi_calculator_app/Icon_Content.dart';
 import 'package:flutter/material.dart';
 import 'package:bmi_calculator_app/Card.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const bottomContainerHeight = 80.0;
 const activeCardColour = Color(0xFF1D1E33);
@@ -25,25 +27,54 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: ReusableCard(colour: activeCardColour,),
+                  child: ReusableCard(
+                    colour: activeCardColour,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'MALE',
+                    ),),
                   ),
                 Expanded(
-                  child: ReusableCard(colour: activeCardColour,),
+                  child: ReusableCard(
+                    colour: activeCardColour,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.venus,
+                      label: 'FEMALE',
+                    ),
+                    ),
                   ), 
               ],
               ),
               ),
           Expanded(
-            child: ReusableCard(colour: activeCardColour,),
+            child: ReusableCard(
+              colour: activeCardColour,
+              cardChild: IconContent(
+                icon: FontAwesomeIcons.mars,
+                label: 'MALE',
+              ),
+              ),
             ),
           Expanded(
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: ReusableCard(colour: activeCardColour,),
+                  child: ReusableCard(
+                    colour: activeCardColour,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'MALE',
+                    ),
+                    ),
                   ),
                 Expanded(
-                  child: ReusableCard(colour: activeCardColour,),
+                  child: ReusableCard(
+                    colour: activeCardColour,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'MALE',
+                    ),
+                    ),
                   ), 
             ],
             ),
